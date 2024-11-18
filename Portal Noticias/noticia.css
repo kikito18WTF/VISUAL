@@ -1,0 +1,333 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(219, 241, 238);
+    margin-top: 33px;
+    overflow-x: hidden; 
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 10%;
+}
+
+nav {
+    position: relative;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(68, 66, 65);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.parte1 {
+    width: 65%;
+}
+
+.texto {
+    display: flex;
+    margin-top: 15px;
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+}
+
+.titulo {
+    width: 65%;
+    font: 50px Verdana;
+}
+
+.normal {
+    width: 65%;
+    font: 14px Verdana;
+    margin-right: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.boton {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(238, 107, 107);
+    padding: 15px;
+    margin-left: 375px;
+    width: 25%;
+    text-align: center;
+}
+
+.parte2 {
+    background-color: rgb(5, 37, 65);
+    width: 33%;
+    padding: 63px;
+    margin-top: 3px;
+}
+
+h2 {
+    font: 40px Verdana;
+    color: rgb(214, 141, 58);
+    margin-left: 5px;
+}
+
+.normal1 {
+    font: 18px Verdana;
+    color: white;
+    margin-left: 5px;
+}
+
+.normal2 {
+    font: 16px Verdana;
+    color: azure;
+    margin-left: 5px;
+    text-align: justify;
+}
+
+.parte3 {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.foto-adn,
+.foto-apple,
+.foto-sueño {
+    width: 10%;
+    margin-bottom: 15%;
+}
+
+.numeros {
+    font-size: 33px;
+    color: rgb(175, 176, 177);
+}
+
+.titulo-2 {
+    font-size: 22px;
+    color: black;
+}
+
+.normal3 {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.nav__menu {
+    display: none; 
+}
+
+
+
+ 
+@media (max-width: 768px) {
+
+
+    header {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+      
+    }
+
+    .logo {
+        width: 10%; 
+    }
+
+    nav ul {
+        display: none; 
+        flex-direction: column; 
+        gap: 70px; 
+
+    }
+    
+    .nav__menu {
+        display: block; 
+        width: 5%;
+    }
+
+    
+    .nav__list--show {
+        display: block; 
+    }
+   
+
+    nav a {
+        font-size: 16px;
+        padding: 5px;
+    }
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parte1 {
+        width: 100%; 
+
+    }
+
+    .parte2 {
+        width: 100%;
+        padding: 30px; 
+    }
+
+    .texto {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .titulo {
+        font-size: 44px;
+       
+    }
+
+    .normal {
+        font-size: 12px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .boton {
+        width: 33%; 
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    
+    .parte3 {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px; 
+        align-items: center; 
+    }
+
+    
+    .parte3 div {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 90%; 
+        max-width: 400px; 
+        margin-bottom: 30px;
+    }
+
+   
+    .parte3 img {
+        width: 50%; 
+        height: auto; 
+        margin-bottom: 10px; 
+    }
+
+   
+    .parte3 .numeros {
+        font-size: 25px;
+        margin-bottom: 5px; 
+    }
+
+    .parte3 .titulo-2 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 5px; 
+    }
+
+    .parte3 .normal3 {
+        font-size: 14px;
+        text-align: center;
+    }
+    footer {
+        font-size: 10px;
+    }
+
+   
+    .nav__menu {
+        display: block;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .titulo {
+        font-size: 26px; 
+    }
+
+    .normal {
+        font-size: 12px;
+    }
+
+    .normal1,
+    .normal2 {
+        font-size: 14px;
+    }
+
+    .normal3 {
+        font-size: 14px;
+    }
+
+    .boton {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .foto-adn,
+    .foto-apple,
+    .foto-sueño {
+        width: 15%;
+    }
+
+    .parte2 {
+        padding: 15px; 
+    }
+
+    .parte3 {
+        gap: 15px;
+    }
+
+    .numeros {
+        font-size: 20px;
+    }
+
+    .titulo-2 {
+        font-size: 16px;
+    }
+}
