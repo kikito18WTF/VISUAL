@@ -153,10 +153,6 @@ footer {
 .nav__menu {
     display: none; 
 }
-
-
-
- 
 @media (max-width: 768px) {
 
 
@@ -171,28 +167,47 @@ footer {
         width: 10%; 
     }
 
-    nav ul {
-        display: none; 
-        justify-content: space-between; 
-        gap: 70px; 
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    nav ul {
+        display: none; /* Inicialmente ocultamos el menú */
+        flex-direction: column; /* Apilar los elementos verticalmente */
+        background-color: rgb(255, 255, 255); /* Fondo blanco */
+        width: 180px; /* Establecemos un tamaño reducido para el menú */
+        position: absolute;
+        top: 20px; /* Coloca el menú debajo del encabezado */
+        left: 100px;
+        padding: 10px 0; /* Menos relleno */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+        z-index: 100;
+        gap: 10px; /* Espaciado reducido */
+        text-align: center;
     }
     
     .nav__menu {
         display: block; 
         width: 5%;
+    
+    }
+    .nav__link {
+        color: rgb(5, 5, 5);
+        padding: 10px 20px ;
+        font-size: 18px;
+
     }
 
-    
-    .nav__list--show {
-        display: block; 
+
+    /* Cuando el menú está visible (se activa la clase nav__list--show) */
+    nav ul.nav__list--show {
+        display: flex;
     }
    
-
-    nav a {
-        font-size: 16px;
-        padding: 5px;
-    }
+  
     
     main {
         flex-direction: column;
@@ -278,11 +293,7 @@ footer {
     }
 
    
-    .nav__menu {
-        display: block;
-        cursor: pointer;
-        margin-top: 15px;
-    }
+   
 }
 
 @media (max-width: 480px) {
